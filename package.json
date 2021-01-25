@@ -1,6 +1,6 @@
 {
     "name": "descriptive-tester",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A simple testing framework that lets you describe your tests.",
     "main": "./bin/main-lib.js",
     "scripts": {
