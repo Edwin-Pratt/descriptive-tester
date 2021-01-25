@@ -1,14 +1,14 @@
 {
     "name": "descriptive-tester",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A simple testing framework that lets you describe your tests.",
-    "main": "./bin/main-lib.js",
+    "main": "./dist/main-lib.js",
     "scripts": {
         "build": "tsc -p .",
-        "test": "node ./bin/cli.js ./tests"
+        "test": "node ./bin/cli ./tests"
     },
     "bin": {
-        "descriptive-tester": "./bin/cli.js"
+        "descriptive-tester": "./bin/descriptive-tester"
     },
     "author": "Edwin Pratt",
     "license": "MIT",
