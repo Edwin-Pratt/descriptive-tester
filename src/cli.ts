@@ -3,7 +3,6 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import { getTests } from "./global-var-helper";
 import { lstatSync, readdirSync } from "fs";
 import { join } from "path";
 
@@ -52,7 +51,7 @@ function retrieveFileList(...argFiles: string[]): string[] {
             // If the argument is a file, we can just add it to the list.
             files.push(arg);
         } catch {
-            throw new ReferenceError(`\x1B[31mThe file or folder called "${arg}" doesn't exist.\x1B[0m`);
+            console.error(`\x1B[31mThe file or folder called "${arg}" doesn't exist.\x1B[0m`);
         }
     }
 
@@ -64,7 +63,8 @@ module.exports = function (args: string[]): void {
     const argv: string[] = args.slice(2);
 
     if (argv.length === 0) {
-        console.log("Expected at least one file or directory.");
+        console.error("\x1B[36mExpected at least one file or directory.\x1B[0m");
+        process.exit(0);
     }
 
     run(retrieveFileList(...argv));
