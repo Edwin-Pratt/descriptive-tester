@@ -1,23 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const global_var_helper_1 = require("./global-var-helper");
 const fs_1 = require("fs");
 const path_1 = require("path");
 function run(files) {
     for (let file of files) {
-        require(file);
-    }
-    for (let test of global_var_helper_1.getTests()) {
-        console.log(`\x1B[33mTest: \x1B[1m${test.testName}\x1B[0m`);
-        for (let testCase of test.testCases) {
-            try {
-                testCase.caseFunction();
-                console.info(`\t\x1B[32mPassed: \x1B[1m${testCase.caseName}\x1b[0m`);
-            }
-            catch (err) {
-                console.error(`\t\x1B[31mFailed: \x1B[1m${testCase.caseName}\x1B[0m`);
-                console.error(err.stack);
-            }
+        try {
+            require(file);
+        }
+        catch (error) {
+            console.error(error.stack);
         }
         console.log("");
     }

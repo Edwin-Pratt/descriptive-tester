@@ -15,27 +15,13 @@ import { join } from "path";
 function run(files: string[]): void {
     // Import all the files. This will automatically run it() tests
     for (let file of files) {
-        require(file);
-    }
-
-    // When all it() calls have been run, we can run each test case.
-    for (let test of getTests()) {
-        console.log(`\x1B[33mTest: \x1B[1m${test.testName}\x1B[0m`);
-
-        // Loop over all test cases in a test and run them
-        for (let testCase of test.testCases) {
-            try {
-                testCase.caseFunction();
-
-                // If no error is thrown, we'll assume it's a pass.
-                console.info(`\t\x1B[32mPassed: \x1B[1m${testCase.caseName}\x1b[0m`);
-            } catch (err) {
-                console.error(`\t\x1B[31mFailed: \x1B[1m${testCase.caseName}\x1B[0m`);
-                console.error(err.stack);
-            }
+        try {
+            require(file);
+        } catch (error) {
+            console.error(error.stack);
         }
 
-        // This console.log statement is here to add a newline after a test is done.
+        // Add spacing
         console.log("");
     }
 }
