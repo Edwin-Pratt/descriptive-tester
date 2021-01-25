@@ -1,0 +1,23 @@
+// Copyright (c) 2021 Edwin Pratt
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES6",
+        "outDir": "bin",
+        "rootDir": "src",
+        "sourceMap": true,
+        "declaration": true,
+        "alwaysStrict": true,
+        "module": "CommonJS",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "declarationMap": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true
+    },
+    "exclude": ["./node_modules", "./bin"]
+}
