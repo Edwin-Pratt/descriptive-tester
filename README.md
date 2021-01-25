@@ -1,6 +1,6 @@
 <!--
  Copyright (c) 2021 Edwin Pratt
- 
+
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
 -->
@@ -8,6 +8,8 @@
 # Descriptive Tester
 
 A simple testing library that allows you to describe your tests.
+
+[View on NPM](https://www.npmjs.com/package/descriptive-tester)
 
 ## Basic idea
 
