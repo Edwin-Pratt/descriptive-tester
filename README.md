@@ -62,9 +62,19 @@ Descriptive Tester is easy to set up and use.
 To install this library, you can run:
 
 ```bash
+# Install globally so that CLI can run.
+npm install -g descriptive-tester
+
+# Install locally so that the tests have a reference to `main-lib.ts`.
 npm install --save-dev descriptive-tester
 
-# or shorter:
+# Shorter version
+# ---------------
+
+# Install globally so that CLI can run.
+npm i -g descriptive-tester
+
+# Install locally so that the tests have a reference to `main-lib.ts`.
 npm i -D descriptive-tester
 ```
 
@@ -82,6 +92,10 @@ descriptive-tester ./my-test-directory/
 # Or pass both directories and files.
 descriptive-tester ./math.js ./tests/ ./dom.js
 ```
+
+> Note:
+> At the moment, the CLI works when it's installed globally.
+> I recommend following the installation instructions of this project above.
 
 ### Writing some tests
 
@@ -140,5 +154,4 @@ descriptive-tester ./math-floor-test.js
 ## Licence
 
 This project is licensed under the MIT license.
-
-Copyright (c) 2021 Edwin Pratt
+Please see the `LICENSE` file for more details.
