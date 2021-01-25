@@ -1,0 +1,20 @@
+// Copyright (c) 2021 Edwin Pratt
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+{
+    "licenser.author": "Edwin Pratt",
+    "licenser.license": "MIT",
+    "markdownlint.config": {
+        "MD007": {
+            "indent": 4
+        },
+        "MD030": {
+            "ol_multi": 2,
+            "ol_single": 2,
+            "ul_multi": 3,
+            "ul_single": 3
+        }
+    }
+}
