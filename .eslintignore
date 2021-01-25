@@ -1,0 +1,7 @@
+# Copyright (c) 2021 Edwin Pratt
+# 
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+node_modules
+bin
