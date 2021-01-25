@@ -12,6 +12,21 @@
     },
     "author": "Edwin Pratt",
     "license": "MIT",
+    "keywords": [
+        "simple",
+        "descriptive",
+        "library",
+        "testing",
+        "tester"
+    ],
+    "homepage": "https://github.com/Edwin-Pratt/descriptive-tester#readme",
+    "bugs": {
+        "url": "https://github.com/Edwin-Pratt/descriptive-tester/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Edwin-Pratt/descriptive-tester"
+    },
     "devDependencies": {
         "@types/node": "^14.14.22",
         "@typescript-eslint/eslint-plugin": "^4.14.0",
