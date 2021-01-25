@@ -5,7 +5,7 @@
     "main": "./dist/main-lib.js",
     "scripts": {
         "build": "tsc -p .",
-        "test": "node ./bin/cli ./tests"
+        "test": "node ./bin/descriptive-tester ./tests"
     },
     "bin": {
         "descriptive-tester": "./bin/descriptive-tester"
