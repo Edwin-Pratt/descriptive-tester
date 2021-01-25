@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Copyright (c) 2021 Edwin Pratt
 //
 // This software is released under the MIT License.

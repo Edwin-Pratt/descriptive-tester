@@ -19,5 +19,5 @@
         "noImplicitThis": true,
         "noImplicitReturns": true
     },
-    "exclude": ["./node_modules", "./bin"]
+    "exclude": ["./node_modules", "./bin", "./dist"]
 }

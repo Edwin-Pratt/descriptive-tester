@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const global_var_helper_1 = require("./global-var-helper");
