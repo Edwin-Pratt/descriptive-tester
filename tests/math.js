@@ -1,9 +1,9 @@
 // Copyright (c) 2021 Edwin Pratt
-// 
+//
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-const { it, should, assert } = require("../bin/main-lib");
+const { it, should, assert } = require("../dist/main-lib");
 
 const add = (a, b) => a + b;
 const sub = (a, b) => a - b;

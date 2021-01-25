@@ -1,9 +1,9 @@
 // Copyright (c) 2021 Edwin Pratt
-// 
+//
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-const { it, should, assert } = require("../bin/main-lib");
+const { it, should, assert } = require("../dist/main-lib");
 
 it("Math.floor", function () {
     should("Floor 3.4 to 3", () => assert.equal(Math.floor(3.5), 3));
