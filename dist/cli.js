@@ -28,7 +28,7 @@ function retrieveFileList(...argFiles) {
             files.push(arg);
         }
         catch (_a) {
-            throw new ReferenceError(`\x1B[31mThe file or folder called "${arg}" doesn't exist.\x1B[0m`);
+            console.error(`\x1B[31mThe file or folder called "${arg}" doesn't exist.\x1B[0m`);
         }
     }
     return files;
@@ -36,7 +36,8 @@ function retrieveFileList(...argFiles) {
 module.exports = function (args) {
     const argv = args.slice(2);
     if (argv.length === 0) {
-        console.log("Expected at least one file or directory.");
+        console.error("\x1B[36mExpected at least one file or directory.\x1B[0m");
+        process.exit(0);
     }
     run(retrieveFileList(...argv));
 };
