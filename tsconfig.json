@@ -7,7 +7,7 @@
     "compilerOptions": {
         "strict": true,
         "target": "ES6",
-        "outDir": "bin",
+        "outDir": "dist",
         "rootDir": "src",
         "sourceMap": true,
         "declaration": true,

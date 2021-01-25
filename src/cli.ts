@@ -75,8 +75,13 @@ function retrieveFileList(...argFiles: string[]): string[] {
     return files;
 }
 
-// Only run this file from the terminal.
-if (require.main === module) {
-    const argv: string[] = process.argv.slice(2);
+// Run the CLI when passed arguments.
+module.exports = function (args: string[]): void {
+    const argv: string[] = args.slice(2);
+
+    if (argv.length === 0) {
+        console.log("Expected at least one file or directory.");
+    }
+
     run(retrieveFileList(...argv));
-}
+};
